@@ -1,0 +1,7 @@
+@import "tailwindcss";
+.font-poppins{
+  font-family: "Poppins", sans-serif;
+}
+.font-playfair{
+  font-family: "Playfair Display", serif;
+}
