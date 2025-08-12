@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { GrFormNextLink, GrFormPreviousLink } from "react-icons/gr";
 import image1 from "../assets/image1.png";
 import image2 from "../assets/image2.png";
 import image3 from "../assets/image3.png";
@@ -18,7 +19,15 @@ const Gallery = () => {
     image1, image2, image3, image4, image5, image6, image7, image8, image9
   ];
 
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState(null);
+
+  const handlePrev = () => {
+    setSelectedIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setSelectedIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
 
   return (
     <div className="bg-[#FCF8F5] min-h-[100vh] relative">
@@ -45,23 +54,48 @@ const Gallery = () => {
             src={img}
             alt="gallery"
             className="z-20 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
-            onClick={() => setSelectedImage(img)}
+            onClick={() => setSelectedIndex(index)}
           />
         ))}
       </div>
 
       {/* Popup Modal */}
-      {selectedImage && (
-        <div className="fixed inset-0 bg-black/30 backdrop-blur-sm bg-opacity-80 flex justify-center items-center z-50">
+      {selectedIndex !== null && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex justify-center items-center z-50 px-2">
+          
+          {/* Previous Button */}
+          <button
+            onClick={handlePrev}
+            className="absolute left-2 sm:left-4 md:left-10 top-1/2 -translate-y-1/2 
+                       text-white bg-black/60 hover:bg-black rounded-full p-3 sm:p-4 z-50"
+          >
+            <GrFormPreviousLink size={30} />
+          </button>
+
+          {/* Image Container */}
           <div className="relative max-w-xl w-full px-4">
+            {/* Close Button */}
             <button
-              className="absolute top-4 right-10 text-white text-4xl font-bold hover:text-red-400"
-              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 sm:right-10 text-white text-3xl sm:text-4xl font-bold hover:text-red-400"
+              onClick={() => setSelectedIndex(null)}
             >
               &times;
             </button>
-            <img src={selectedImage} alt="popup" className="w-full h-[60vh] object-cover rounded-lg" />
+            <img
+              src={images[selectedIndex]}
+              alt="popup"
+              className="w-full max-h-[70vh] object-contain rounded-lg"
+            />
           </div>
+
+          {/* Next Button */}
+          <button
+            onClick={handleNext}
+            className="absolute right-2 sm:right-4 md:right-10 top-1/2 -translate-y-1/2 
+                       text-white bg-black/60 hover:bg-black rounded-full p-3 sm:p-4 z-50"
+          >
+            <GrFormNextLink size={30} />
+          </button>
         </div>
       )}
     </div>
