@@ -41,9 +41,9 @@ const Reservation = () => {
     return (
         <div className='relative bg-[#FCF8F5] overflow-hidden min-h-screen'>
             {/* Background Images */}
-            <img src={Group1} alt="" className='absolute bottom-5 left-0 w-28 md:w-40' />
-            <img src={Group3} alt="" className='absolute top-0 w-32 md:w-48' />
-            <img src={Group2} alt="" className='absolute right-0 bottom-0 w-28 md:w-40' />
+            <img src={Group1} alt="" className='absolute z-0 bottom-5 left-0 w-28 md:w-40' />
+            <img src={Group3} alt="" className='absolute z-0 top-0 w-32 md:w-48' />
+            <img src={Group2} alt="" className='absolute z-0 right-0 bottom-0 w-28 md:w-40' />
 
             {/* Title & Description */}
             <div className='flex flex-col justify-center items-center gap-3 py-10 px-4'>
