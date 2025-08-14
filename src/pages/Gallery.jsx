@@ -62,7 +62,7 @@ const Gallery = () => {
       {/* Popup Modal */}
       {selectedIndex !== null && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex justify-center items-center z-50 px-2">
-          
+
           {/* Previous Button */}
           <button
             onClick={handlePrev}

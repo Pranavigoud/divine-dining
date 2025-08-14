@@ -1,11 +1,12 @@
 import { createFileRoute } from '@tanstack/react-router'
-import Home from '../pages/Home'
-export const Route = createFileRoute('/')({
+import Menu from '../pages/Menu'
+
+export const Route = createFileRoute('/menu')({
   component: RouteComponent,
 })
 
 function RouteComponent() {
   return <div>
-    <Home/>
+    <Menu/>
   </div>
 }

@@ -1,11 +1,12 @@
 import { createFileRoute } from '@tanstack/react-router'
-import Home from '../pages/Home'
-export const Route = createFileRoute('/')({
+import Gallery from '../pages/Gallery'
+
+export const Route = createFileRoute('/gallery')({
   component: RouteComponent,
 })
 
 function RouteComponent() {
   return <div>
-    <Home/>
+    <Gallery/>
   </div>
 }
