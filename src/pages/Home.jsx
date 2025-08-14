@@ -44,10 +44,11 @@ const Home = () => {
             {/* GALLERY SECTION */}
             <img src={Group3} alt="decoration" className="pointer-events-none select-none absolute top-11/18 left-4/12 " />
             <img src={Group4} alt="flower" className="pointer-events-none select-none absolute top-20/28 left-2/7 opacity-20 grayscale" />
+
             {/* ===== HERO ===== */}
             <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-16 px-8 md:px-28 pt-16 md:pt-28">
                 {/* Left */}
-                <div className="order-2 md:order-1 flex flex-col gap-5">
+                <div className="order-2 md:order-1 flex flex-col gap-5 text-center md:text-left">
                     <h1 className="text-[#1E2C45] font-david-libre font-bold leading-tight text-5xl md:text-7xl">
                         Indulge in <br /> Culinary Excellence
                     </h1>
@@ -55,7 +56,7 @@ const Home = () => {
                         "In Our Restaurant, Dining Is An Art Form. We Blend The Finest Seasonal Ingredients
                         With World-Class Culinary Techniques To Create Dishes."
                     </p>
-                    <div className="flex gap-4">
+                    <div className="flex justify-center md:justify-start gap-4">
                         <button className="bg-[#333333] text-white px-6 py-2 rounded-tl-2xl rounded-br-2xl shadow-lg hover:opacity-90 transition"
                          onClick={() => navigate({ to: "/Menu" })}
                         >
@@ -67,7 +68,7 @@ const Home = () => {
                             Book a table
                         </button>
                     </div>
-                    <div className="flex gap-8 pt-8 px-6">
+                    <div className="flex justify-center md:justify-start gap-8 pt-8 px-6">
                         <FaFacebookF className="text-xl border rounded-full p-2 w-10 h-10 cursor-pointer hover:bg-[#1E2C45] hover:text-white transition" />
                         <FaInstagram className="text-xl border rounded-full p-2 w-10 h-10 cursor-pointer hover:bg-[#1E2C45] hover:text-white transition" />
                         <RxTwitterLogo className="text-xl border rounded-full p-2 w-10 h-10 cursor-pointer hover:bg-[#1E2C45] hover:text-white transition" />
@@ -81,27 +82,26 @@ const Home = () => {
                         <img
                             src={homeimage2}
                             alt="Food"
-                            className="absolute bottom-30 -left-30 w-50 h-50 "
+                            className="absolute bottom-30 -left-30 w-50 h-50"
                         />
                     </div>
                 </div>
             </section>
 
             {/* ===== ABOUT ===== */}
-            <section id="about" className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start mt-24 md:mt-32 px-8 md:px-28">
-                <div className="flex justify-center md:justify-start z-50">
+            <section id="about" className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center mt-24 md:mt-32 px-8 md:px-28 text-center md:text-left">
+                <div className="flex justify-center md:justify-start z-50 order-1">
                     <img src={homeimage4} alt="chef at work" className={imageClasses} />
                 </div>
-                <div className="text-end">
+                <div className="order-2">
                     <h2 className="text-[#1E2C45] font-playfair text-5xl md:text-6xl font-bold mb-6">
                         About Us
                     </h2>
-                    <p className="text-black text-base md:text-lg font-poppins leading-10">
-                        At Divine Dining, we believe dining is more <br /> than just a meal—it's an experience of <br />
-                        flavors, traditions, and warmth. Established <br />with a passion for excellence, we serve a <br />
-                        fusion of authentic and contemporary dishes <br /> prepared with the freshest ingredients.
-                        <br />
-                        Our Promise: Exceptional taste, world-class <br />service, and an ambiance that truly makes <br /> you feel special.
+                    <p className="text-black text-base md:text-lg font-poppins leading-7 md:leading-10">
+                        At Divine Dining, we believe dining is more than just a meal—it's an experience of
+                        flavors, traditions, and warmth. Established with a passion for excellence, we serve a
+                        fusion of authentic and contemporary dishes prepared with the freshest ingredients.
+                        Our Promise: Exceptional taste, world-class service, and an ambiance that truly makes you feel special.
                     </p>
                 </div>
             </section>
@@ -130,17 +130,16 @@ const Home = () => {
                 </div>
             </section>
 
-
             {/* ===== VIEW GALLERY ===== */}
             <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-16 mt-24 md:mt-32 px-8 md:px-28 pb-20">
                 <div className="flex justify-center md:justify-start z-10">
                     <img src={homeimage5} alt="ambience" className={imageClasses} />
                 </div>
                 <div className="text-center">
-                    <h3 className="text-3xl md:text-4xl font-bold  text-[#1E2C45] mb-4 leading-snug font-playfair">
-                         Discover the beauty and <br />elegance that define every <br />Divine Dining experience.
+                    <h3 className="text-3xl md:text-4xl font-bold text-[#1E2C45] mb-4 leading-snug font-playfair">
+                        Discover the beauty and elegance that define every Divine Dining experience.
                     </h3>
-                    <button className="bg-[#1E2C45] text-white px-6 py-2 font-semibold rounded-lg shadow hover:opacity-90 transition "
+                    <button className="bg-[#1E2C45] text-white px-6 py-2 font-semibold rounded-lg shadow hover:opacity-90 transition"
                      onClick={() => navigate({ to: "/Gallery" })} 
                     >
                         View Gallery
@@ -149,58 +148,53 @@ const Home = () => {
             </section>
 
             {/* ===== CONTACT US ===== */}
-
             <section className="px-8 md:px-28 py-20 bg-white text-center relative">
                 {/* Decorative leaf */}
                 <img
                     src={Group4}
                     alt="leaf decoration"
-                    className="pointer-events-none select-none absolute right-1/3 -top-10 opacity-20 grayscale "
+                    className="pointer-events-none select-none absolute right-1/3 -top-10 opacity-20 grayscale"
                 />
-
                 {/* Heading */}
                 <h2 className="text-[#1E2C45] font-playfair text-4xl md:text-5xl font-bold mb-12">
                     Contact Us
                 </h2>
-
                 {/* Contact details */}
                 <div className="flex flex-col gap-6 items-center max-w-lg mx-auto">
                     {/* Email */}
-                    <div className="flex items-center gap-4 w-full px-38">
+                    <div className="flex flex-col sm:flex-row items-center gap-4 w-full text-center sm:text-left">
                         <div className="bg-[#1E2C45] text-white rounded-full p-3 flex items-center justify-center w-12 h-12">
                             <MdEmail className="text-xl" />
                         </div>
                         <span className="text-gray-700 text-lg">info@eatery.com</span>
                     </div>
-
                     {/* Phone */}
-                    <div className="flex items-center gap-4 w-full px-38">
+                    <div className="flex flex-col sm:flex-row items-center gap-4 w-full text-center sm:text-left">
                         <div className="bg-[#1E2C45] text-white rounded-full p-3 flex items-center justify-center w-12 h-12">
                             <FiPhone className="text-xl" />
                         </div>
                         <span className="text-gray-700 text-lg">123 456 789</span>
                     </div>
-
                     {/* Address */}
-                    <div className="flex items-center gap-4 w-full pl-38">
+                    <div className="flex flex-col sm:flex-row items-center gap-4 w-full text-center sm:text-left">
                         <div className="bg-[#1E2C45] text-white rounded-full p-3 flex items-center justify-center w-12 h-12">
                             <GoLocation className="text-xl" />
                         </div>
-                        <span className="text-gray-700 text-lg text-left">
+                        <span className="text-gray-700 text-lg">
                             123 Name Street, Kolma, 45678, Stateville
                         </span>
                     </div>
                 </div>
-
                 {/* Social icons box */}
-                <div className="mt-12 inline-flex items-center gap-6 px-20 py-3 ">
+                <div className="mt-12 inline-flex items-center gap-6 px-4 sm:px-20 py-3 flex-wrap justify-center">
                     <FaInstagram className="text-xl cursor-pointer hover:text-[#1E2C45] transition" />
                     <PiFacebookLogoBold className="text-xl cursor-pointer hover:text-[#1E2C45] transition" />
-                    <TbBrandPinterest className="text-xl cursor-pointer hover:text-[#1E2C45] transition"/>
-                    <RiYoutubeLine className="text-xl cursor-pointer hover:text-[#1E2C45] transition"/>
-                    <BsTwitterX className="text-xl cursor-pointer hover:text-[#1E2C45] transition"/>
+                    <TbBrandPinterest className="text-xl cursor-pointer hover:text-[#1E2C45] transition" />
+                    <RiYoutubeLine className="text-xl cursor-pointer hover:text-[#1E2C45] transition" />
+                    <BsTwitterX className="text-xl cursor-pointer hover:text-[#1E2C45] transition" />
                 </div>
             </section>
+
             <Footer />
         </div>
     );
