@@ -5,10 +5,10 @@ import Group3 from "../assets/Group3.png";
 const Menu = () => {
   return (
     <div className="bg-[#FAF7F4] min-h-screen flex flex-col items-center px-6 py-10 font-poppins relative">
-      <img src={Group4} alt="" className='absolute z-0 bottom-5 left-0 opacity-20 grayscale' />
-      <img src={Group4} alt="" className='absolute z-0 bottom-1/2 right-0 opacity-20 grayscale ' />
-      <img src={Group3} alt="" className='absolute z-0 top-0 left-0' />
-      <img src={Group2} alt="" className='absolute z-0 right-0 bottom-0 ' />
+      <img src={Group4} alt="" className='absolute z-[-10] bottom-5 left-0 opacity-20 grayscale ' />
+      <img src={Group4} alt="" className='absolute z-[-10] bottom-1/2 right-0 opacity-20 grayscale ' />
+      <img src={Group3} alt="" className='absolute z-[-10] top-0 left-0' />
+      <img src={Group2} alt="" className='absolute z-[-10] right-0 bottom-0 ' />
       {/* Title */}
       <h1 className="text-5xl font-playfair text-[#1E2C45] mb-8">Our Menu</h1>
 
