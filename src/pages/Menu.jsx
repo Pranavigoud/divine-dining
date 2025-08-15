@@ -11,7 +11,7 @@ const Menu = () => {
 
   return (
     <div>
-      <div className="bg-[#FAF7F4] min-h-screen flex flex-col items-center px-6 py-10 font-poppins relative overflow-hidden">
+      <div className="bg-[#FCF8F5] min-h-screen flex flex-col items-center px-6 py-10 font-poppins relative overflow-hidden">
 
         {/* Decorative Images - Responsive & Pointer Events Disabled */}
         <img

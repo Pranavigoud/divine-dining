@@ -9,9 +9,9 @@ const Reservation = () => {
         window.scrollTo(0, 0);
     }, []);
     const timeslots = [
-        "8:30 am", "8:45 am", "9:30 am", "9:40 am",
-        "8:30 pm", "9:30 pm", "10:30 pm", "8:30 pm",
-        "8:30 pm", "8:30 pm", "8:30 pm", "8:30 pm"
+        "10:45 am", "11:15 am", "11:30 am", "11:45 am",
+        "12:00 pm", "12:15 pm", "12:30 pm", "12:45 pm",
+        "1:15 pm", "1:30 pm", "1:45 pm", "2:00 pm"
     ];
 
     const [name, setName] = useState("");
