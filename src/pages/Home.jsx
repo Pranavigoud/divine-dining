@@ -8,7 +8,7 @@ import Ellipse from "../assets/Ellipse.png";
 import Group3 from "../assets/Group3.png";
 import Group4 from "../assets/Group4.png";
 import Group5 from "../assets/Group5.png";
-import contactbg from "../assets/contactbg.png"; // moved from Contact.jsx
+import contactbg from "../assets/contactbg.png";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { RxTwitterLogo } from "react-icons/rx";
 import { MdEmail } from "react-icons/md";
@@ -30,34 +30,34 @@ const Home = () => {
         <div className="relative bg-white font-poppins overflow-hidden">
             {/* Decorative leaves */}
             <img src={Group4} alt="flower" 
-                 className="pointer-events-none select-none z-0 absolute opacity-20 grayscale max-w-[120px] top-4 right-4 sm:max-w-none sm:top-2 sm:right-10" /> {/* CHANGED */}
+                 className="pointer-events-none select-none z-0 absolute opacity-20 grayscale max-w-[120px] top-4 right-4 sm:max-w-none sm:top-2 sm:right-10" /> 
             <img src={Group3} alt="decoration" 
-                 className="pointer-events-none select-none z-0 absolute max-w-[100px] top-60 right-2 sm:max-w-none sm:top-96 sm:right-0" /> {/* CHANGED */}
+                 className="pointer-events-none select-none z-0 absolute max-w-[100px] top-60 right-2 sm:max-w-none sm:top-96 sm:right-0" /> 
             <img src={Group5} alt="decoration" 
-                 className="pointer-events-none select-none z-0 absolute opacity-20 grayscale max-w-[100px] left-4 top-20 sm:max-w-none sm:left-5/11 sm:top-40" /> {/* CHANGED */}
+                 className="pointer-events-none select-none z-0 absolute opacity-20 grayscale max-w-[100px] left-4 top-20 sm:max-w-none sm:left-5/11 sm:top-40" /> 
             <img src={Ellipse} alt="decoration" 
-                 className="pointer-events-none select-none z-0 absolute max-w-[80px] top-0 sm:max-w-none" /> {/* CHANGED */}
+                 className="pointer-events-none select-none z-0 absolute max-w-[80px] top-0 sm:max-w-none" /> 
             <img src={Ellipse} alt="decoration" 
-                 className="pointer-events-none select-none z-0 absolute max-w-[80px] top-0 -translate-y-10 sm:max-w-none sm:-translate-y-20" /> {/* CHANGED */}
+                 className="pointer-events-none select-none z-0 absolute max-w-[80px] top-0 -translate-y-10 sm:max-w-none sm:-translate-y-20" /> 
             <img src={Ellipse} alt="decoration" 
-                 className="pointer-events-none select-none absolute z-0 max-w-[80px] top-0 -translate-x-10 sm:max-w-none sm:-translate-x-30" /> {/* CHANGED */}
+                 className="pointer-events-none select-none absolute z-0 max-w-[80px] top-0 -translate-x-10 sm:max-w-none sm:-translate-x-30" /> 
             {/* ABOUT SECTION */}
             <img src={Group4} alt="flower" 
-                 className="pointer-events-none select-none absolute z-0 opacity-20 grayscale max-w-[120px] top-10 left-4 sm:max-w-none sm:top-2/12 sm:left-10" /> {/* CHANGED */}
+                 className="pointer-events-none select-none absolute z-0 opacity-20 grayscale max-w-[120px] top-10 left-4 sm:max-w-none sm:top-2/12 sm:left-10" /> 
             <img src={Group3} alt="decoration" 
-                 className="pointer-events-none select-none absolute z-0 max-w-[100px] top-40 left-10 sm:max-w-none sm:top-4/16 sm:left-4/12" /> {/* CHANGED */}
+                 className="pointer-events-none select-none absolute z-0 max-w-[100px] top-40 left-10 sm:max-w-none sm:top-4/16 sm:left-4/12" /> 
             {/* MENU SECTION */}
             <img src={Group3} alt="decoration" 
-                 className="pointer-events-none select-none absolute z-0 max-w-[100px] top-80 right-2 sm:max-w-none sm:top-6/18 sm:right-0" /> {/* CHANGED */}
+                 className="pointer-events-none select-none absolute z-0 max-w-[100px] top-80 right-2 sm:max-w-none sm:top-6/18 sm:right-0" /> 
             <img src={Group5} alt="decoration" 
-                 className="pointer-events-none select-none absolute z-0 opacity-20 grayscale max-w-[100px] right-10 top-40 sm:max-w-none sm:right-90 sm:top-3/7 sm:-translate-y-1/2" /> {/* CHANGED */}
+                 className="pointer-events-none select-none absolute z-0 opacity-20 grayscale max-w-[100px] right-10 top-40 sm:max-w-none sm:right-90 sm:top-3/7 sm:-translate-y-1/2" /> 
             <img src={Group4} alt="flower" 
-                 className="pointer-events-none select-none absolute z-0 opacity-20 grayscale max-w-[120px] top-60 right-20 sm:max-w-none sm:top-12/25 sm:right-2/7" /> {/* CHANGED */}
+                 className="pointer-events-none select-none absolute z-0 opacity-20 grayscale max-w-[120px] top-60 right-20 sm:max-w-none sm:top-12/25 sm:right-2/7" /> 
             {/* GALLERY SECTION */}
             <img src={Group3} alt="decoration" 
-                 className="pointer-events-none select-none absolute z-0 max-w-[100px] top-80 left-10 sm:max-w-none sm:top-10/19 sm:left-4/12" /> {/* CHANGED */}
+                 className="pointer-events-none select-none absolute z-0 max-w-[100px] top-80 left-10 sm:max-w-none sm:top-10/19 sm:left-4/12" /> 
             <img src={Group4} alt="flower" 
-                 className="pointer-events-none select-none absolute z-0 opacity-20 grayscale max-w-[120px] top-80 left-20 sm:max-w-none sm:top-18/28 sm:left-2/7" /> {/* CHANGED */}
+                 className="pointer-events-none select-none absolute z-0 opacity-20 grayscale max-w-[120px] top-80 left-20 sm:max-w-none sm:top-18/28 sm:left-2/7" /> 
 
             {/* ===== HERO ===== */}
             <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-16 px-8 md:px-28 pt-16 md:pt-28">
