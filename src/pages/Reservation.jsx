@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from "../components/Footer"
 import Group1 from "../assets/Group1.png";
 import Group2 from "../assets/Group2.png";
 import Group3 from "../assets/Group3.png";
@@ -159,7 +160,7 @@ const Reservation = () => {
                 >
                     Make Reservation
                 </button>
-            </div>
+                </div>
 
             {/* Popup Modal */}
             {showPopup && (
@@ -185,6 +186,7 @@ const Reservation = () => {
                     </div>
                 </div>
             )}
+            <Footer/>
         </div>
     );
 };

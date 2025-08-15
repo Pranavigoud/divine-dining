@@ -1,10 +1,12 @@
 import React from "react";
+import Footer from "../components/Footer"
 import Group4 from "../assets/Group4.png";
 import Group2 from "../assets/Group2.png";
 import Group3 from "../assets/Group3.png";
 
 const Menu = () => {
   return (
+  <div>
     <div className="bg-[#FAF7F4] min-h-screen flex flex-col items-center px-6 py-10 font-poppins relative">
       {/* Decorative Images - Disabled Pointer Events */}
       <img
@@ -142,7 +144,9 @@ const Menu = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      <Footer/>
+  </div>
   );
 };
 
