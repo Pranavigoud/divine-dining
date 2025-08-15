@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Footer from "../components/Footer"
 import Group1 from "../assets/Group1.png";
 import Group2 from "../assets/Group2.png";
 import Group3 from "../assets/Group3.png";
 
 const Reservation = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const timeslots = [
         "8:30 am", "8:45 am", "9:30 am", "9:40 am",
         "8:30 pm", "9:30 pm", "10:30 pm", "8:30 pm",
@@ -42,13 +45,13 @@ const Reservation = () => {
     return (
         <div className='relative bg-[#FCF8F5] overflow-hidden min-h-screen'>
             {/* Background Images */}
-            <img src={Group1} alt="decoration" className='absolute z-0 bottom-7/20 left-0 w-28 md:w-40 pointer-events-none' />
-            <img src={Group3} alt="decoration" className='absolute z-0 top-0 w-32 md:w-48 pointer-events-none' />
-            <img src={Group2} alt="decoration" className='absolute z-0 right-0 bottom-6/20 w-28 md:w-40 pointer-events-none' />
+            <img src={Group1} alt="decoration" className='absolute z-0 md:bottom-[35%] bottom-[80%] left-0 w-20 md:w-40 pointer-events-none' />
+            <img src={Group3} alt="decoration" className='absolute z-0 md:top-0 top-[-5%] w-24 md:w-48 pointer-events-none' />
+            <img src={Group2} alt="decoration" className='absolute z-0 md:right-0 right-[-5%] md:bottom-[30%] bottom-[70%] w-20 md:w-40 pointer-events-none' />
 
             {/* Title */}
             <div className='flex flex-col justify-center items-center gap-3 py-10 px-4'>
-                <h1 className='font-playfair font-[400] text-4xl md:text-6xl italic text-[#1E2C45]'>
+                <h1 className='font-playfair font-[400] text-4xl md:text-6xl  text-[#1E2C45]'>
                     Reservation
                 </h1>
                 <p className='font-poppins max-w-2xl text-center text-sm md:text-base'>

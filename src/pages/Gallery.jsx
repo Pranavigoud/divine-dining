@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { GrFormNextLink, GrFormPreviousLink } from "react-icons/gr";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
 import image1 from "../assets/image1.png";
 import image2 from "../assets/image2.png";
 import image3 from "../assets/image3.png";
@@ -22,6 +22,10 @@ const Gallery = () => {
 
   const [selectedIndex, setSelectedIndex] = useState(null);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const handlePrev = () => {
     setSelectedIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
@@ -33,15 +37,15 @@ const Gallery = () => {
   return (
     <div className="bg-[#FCF8F5] min-h-[100vh] relative">
       {/* Background decorations */}
-      <img src={Group1} alt="" className="absolute z-0 bottom-40 hidden md:block" />
+      <img src={Group1} alt="" className="absolute z-0 top-6/10 hidden md:block" />
       <img src={Group3} alt="" className="absolute z-0 top-20 hidden md:block" />
       <img src={Group4} alt="" className="absolute z-0 right-0 grayscale opacity-20 hidden md:block" />
       <img src={Group4} alt="" className="absolute z-0 right-3 top-1/3 grayscale opacity-20 hidden md:block" />
-      <img src={Group2} alt="" className="absolute z-0 right-80 bottom-0 hidden md:block" />
+      <img src={Group2} alt="" className="absolute z-0 right-0 top-8/13 hidden md:block" />
 
       {/* Heading */}
       <div className="flex flex-col justify-center items-center gap-3 py-10 px-4">
-        <h1 className="font-playfair font-[400] text-4xl md:text-6xl italic text-[#1E2C45]">Gallery</h1>
+        <h1 className="font-playfair font-[400] text-4xl md:text-6xl text-[#1E2C45]">Gallery</h1>
         <p className="font-poppins text-center max-w-2xl">
           Discover the beauty and elegance that define every <br className="hidden md:block" /> Divine Dining experience.
         </p>
@@ -99,7 +103,7 @@ const Gallery = () => {
           </button>
         </div>
       )}
-      <Footer/>
+      <Footer />
     </div>
   );
 };

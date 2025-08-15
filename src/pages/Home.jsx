@@ -1,13 +1,14 @@
 import React from "react";
-import homeimage from "../assets/homeimage.png";      // Big restaurant photo (hero, right)
-import homeimage2 from "../assets/homeimage2.png";   // Small circular food image (overlaps hero)
-import homeimage3 from "../assets/homeimage3.png";   // Plated dish image (right, below About)
-import homeimage4 from "../assets/homeimage4.png";   // Chef / left images
-import homeimage5 from "../assets/homeimage5.png";   // Ambience photo
+import homeimage from "../assets/homeimage.png";      
+import homeimage2 from "../assets/homeimage2.png";   
+import homeimage3 from "../assets/homeimage3.png";   
+import homeimage4 from "../assets/homeimage4.png";   
+import homeimage5 from "../assets/homeimage5.png";   
 import Ellipse from "../assets/Ellipse.png";
 import Group3 from "../assets/Group3.png";
 import Group4 from "../assets/Group4.png";
 import Group5 from "../assets/Group5.png";
+import contactbg from "../assets/contactbg.png"; // moved from Contact.jsx
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { RxTwitterLogo } from "react-icons/rx";
 import { MdEmail } from "react-icons/md";
@@ -28,22 +29,35 @@ const Home = () => {
     return (
         <div className="relative bg-white font-poppins overflow-hidden">
             {/* Decorative leaves */}
-            <img src={Group4} alt="flower" className="pointer-events-none select-none absolute top-2 right-10 opacity-20 grayscale" />
-            <img src={Group3} alt="decoration" className="pointer-events-none select-none absolute top-96 right-0 " />
-            <img src={Group5} alt="decoration" className="pointer-events-none select-none absolute left-5/11 top-40 opacity-20 grayscale" />
-            <img src={Ellipse} alt="decoration" className="pointer-events-none select-none absolute top-0" />
-            <img src={Ellipse} alt="decoration" className="pointer-events-none select-none absolute top-0 -translate-y-20" />
-            <img src={Ellipse} alt="decoration" className="pointer-events-none select-none absolute top-0 -translate-x-30" />
+            <img src={Group4} alt="flower" 
+                 className="pointer-events-none select-none z-0 absolute opacity-20 grayscale max-w-[120px] top-4 right-4 sm:max-w-none sm:top-2 sm:right-10" /> {/* CHANGED */}
+            <img src={Group3} alt="decoration" 
+                 className="pointer-events-none select-none z-0 absolute max-w-[100px] top-60 right-2 sm:max-w-none sm:top-96 sm:right-0" /> {/* CHANGED */}
+            <img src={Group5} alt="decoration" 
+                 className="pointer-events-none select-none z-0 absolute opacity-20 grayscale max-w-[100px] left-4 top-20 sm:max-w-none sm:left-5/11 sm:top-40" /> {/* CHANGED */}
+            <img src={Ellipse} alt="decoration" 
+                 className="pointer-events-none select-none z-0 absolute max-w-[80px] top-0 sm:max-w-none" /> {/* CHANGED */}
+            <img src={Ellipse} alt="decoration" 
+                 className="pointer-events-none select-none z-0 absolute max-w-[80px] top-0 -translate-y-10 sm:max-w-none sm:-translate-y-20" /> {/* CHANGED */}
+            <img src={Ellipse} alt="decoration" 
+                 className="pointer-events-none select-none absolute z-0 max-w-[80px] top-0 -translate-x-10 sm:max-w-none sm:-translate-x-30" /> {/* CHANGED */}
             {/* ABOUT SECTION */}
-            <img src={Group4} alt="flower" className="pointer-events-none select-none absolute top-3/16 left-10 opacity-20 grayscale" />
-            <img src={Group3} alt="decoration" className="pointer-events-none select-none absolute top-4/16 left-4/12 " />
+            <img src={Group4} alt="flower" 
+                 className="pointer-events-none select-none absolute z-0 opacity-20 grayscale max-w-[120px] top-10 left-4 sm:max-w-none sm:top-2/12 sm:left-10" /> {/* CHANGED */}
+            <img src={Group3} alt="decoration" 
+                 className="pointer-events-none select-none absolute z-0 max-w-[100px] top-40 left-10 sm:max-w-none sm:top-4/16 sm:left-4/12" /> {/* CHANGED */}
             {/* MENU SECTION */}
-            <img src={Group3} alt="decoration" className="pointer-events-none select-none absolute top-7/18 right-0 " />
-            <img src={Group5} alt="decoration" className="pointer-events-none select-none absolute right-90 top-1/2 -translate-y-1/2 opacity-20 grayscale" />
-            <img src={Group4} alt="flower" className="pointer-events-none select-none absolute top-13/24 right-2/7 opacity-20 grayscale" />
+            <img src={Group3} alt="decoration" 
+                 className="pointer-events-none select-none absolute z-0 max-w-[100px] top-80 right-2 sm:max-w-none sm:top-6/18 sm:right-0" /> {/* CHANGED */}
+            <img src={Group5} alt="decoration" 
+                 className="pointer-events-none select-none absolute z-0 opacity-20 grayscale max-w-[100px] right-10 top-40 sm:max-w-none sm:right-90 sm:top-3/7 sm:-translate-y-1/2" /> {/* CHANGED */}
+            <img src={Group4} alt="flower" 
+                 className="pointer-events-none select-none absolute z-0 opacity-20 grayscale max-w-[120px] top-60 right-20 sm:max-w-none sm:top-12/25 sm:right-2/7" /> {/* CHANGED */}
             {/* GALLERY SECTION */}
-            <img src={Group3} alt="decoration" className="pointer-events-none select-none absolute top-11/18 left-4/12 " />
-            <img src={Group4} alt="flower" className="pointer-events-none select-none absolute top-20/28 left-2/7 opacity-20 grayscale" />
+            <img src={Group3} alt="decoration" 
+                 className="pointer-events-none select-none absolute z-0 max-w-[100px] top-80 left-10 sm:max-w-none sm:top-10/19 sm:left-4/12" /> {/* CHANGED */}
+            <img src={Group4} alt="flower" 
+                 className="pointer-events-none select-none absolute z-0 opacity-20 grayscale max-w-[120px] top-80 left-20 sm:max-w-none sm:top-18/28 sm:left-2/7" /> {/* CHANGED */}
 
             {/* ===== HERO ===== */}
             <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-16 px-8 md:px-28 pt-16 md:pt-28">
@@ -52,7 +66,7 @@ const Home = () => {
                     <h1 className="text-[#1E2C45] font-david-libre font-bold leading-tight text-5xl md:text-7xl">
                         Indulge in <br /> Culinary Excellence
                     </h1>
-                    <p className="text-gray-600">
+                    <p className="text-black">
                         "In Our Restaurant, Dining Is An Art Form. We Blend The Finest Seasonal Ingredients
                         With World-Class Culinary Techniques To Create Dishes."
                     </p>
@@ -108,7 +122,6 @@ const Home = () => {
 
             {/* ===== VIEW MENU ===== */}
             <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-16 mt-24 md:mt-32 px-8 md:px-28">
-                {/* Left Content */}
                 <div className="order-2 md:order-1 text-center">
                     <h3 className="text-[#1E2C45] font-playfair font-bold text-3xl md:text-4xl leading-snug mb-6">
                         Explore our full menu of fresh flavors and signature dishes.
@@ -119,8 +132,6 @@ const Home = () => {
                         View Menu
                     </button>
                 </div>
-
-                {/* Right Image */}
                 <div className="order-1 md:order-2 flex justify-center md:justify-end z-10">
                     <img
                         src={homeimage3}
@@ -148,34 +159,28 @@ const Home = () => {
             </section>
 
             {/* ===== CONTACT US ===== */}
-            <section className="px-8 md:px-28 py-20 bg-white text-center relative">
-                {/* Decorative leaf */}
+            <section id="contact" className="px-8 md:px-28 py-20 bg-white text-center relative">
                 <img
                     src={Group4}
                     alt="leaf decoration"
-                    className="pointer-events-none select-none absolute right-1/3 -top-10 opacity-20 grayscale"
+                    className="pointer-events-none select-none absolute right-1/3 -top-10 opacity-20 grayscale max-w-[100px] sm:max-w-none" // CHANGED
                 />
-                {/* Heading */}
                 <h2 className="text-[#1E2C45] font-playfair text-4xl md:text-5xl font-bold mb-12">
                     Contact Us
                 </h2>
-                {/* Contact details */}
                 <div className="flex flex-col gap-6 items-center max-w-lg mx-auto">
-                    {/* Email */}
                     <div className="flex flex-col sm:flex-row items-center gap-4 w-full text-center sm:text-left">
                         <div className="bg-[#1E2C45] text-white rounded-full p-3 flex items-center justify-center w-12 h-12">
                             <MdEmail className="text-xl" />
                         </div>
                         <span className="text-gray-700 text-lg">info@eatery.com</span>
                     </div>
-                    {/* Phone */}
                     <div className="flex flex-col sm:flex-row items-center gap-4 w-full text-center sm:text-left">
                         <div className="bg-[#1E2C45] text-white rounded-full p-3 flex items-center justify-center w-12 h-12">
                             <FiPhone className="text-xl" />
                         </div>
                         <span className="text-gray-700 text-lg">123 456 789</span>
                     </div>
-                    {/* Address */}
                     <div className="flex flex-col sm:flex-row items-center gap-4 w-full text-center sm:text-left">
                         <div className="bg-[#1E2C45] text-white rounded-full p-3 flex items-center justify-center w-12 h-12">
                             <GoLocation className="text-xl" />
@@ -185,7 +190,6 @@ const Home = () => {
                         </span>
                     </div>
                 </div>
-                {/* Social icons box */}
                 <div className="mt-12 inline-flex items-center gap-6 px-4 sm:px-20 py-3 flex-wrap justify-center">
                     <FaInstagram className="text-xl cursor-pointer hover:text-[#1E2C45] transition" />
                     <PiFacebookLogoBold className="text-xl cursor-pointer hover:text-[#1E2C45] transition" />
@@ -194,6 +198,23 @@ const Home = () => {
                     <BsTwitterX className="text-xl cursor-pointer hover:text-[#1E2C45] transition" />
                 </div>
             </section>
+
+            {/* ===== FORMER CONTACT HERO SECTION ===== */}
+            <div
+                className="relative h-[70vh] bg-cover bg-center flex flex-col items-center justify-center text-white"
+                style={{ backgroundImage: `url(${contactbg})` }}
+            >
+                <div className="absolute inset-0 bg-black/20 bg-opacity-50"></div>
+                <h1 className="relative text-3xl md:text-5xl font-semibold text-center px-4">
+                    Elevate your dining experience to a higher quality.
+                </h1>
+                <button
+                    className="relative mt-6 border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition duration-300"
+                    onClick={() => navigate({ to: "/Reservation" })}
+                >
+                    Make a Reservation
+                </button>
+            </div>
 
             <Footer />
         </div>

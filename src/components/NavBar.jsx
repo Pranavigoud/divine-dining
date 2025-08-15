@@ -12,7 +12,7 @@ const NavBar = () => {
     { id: 2, name: "About Us", path: "#about" },
     { id: 3, name: "Menu", path: "/Menu" },
     { id: 4, name: "Gallery", path: "/Gallery" },
-    { id: 5, name: "Contact", path: "/Contact" },
+    { id: 5, name: "Contact", path: "#contact" },
   ];
 
   const handleNavClick = async (item) => {
@@ -41,7 +41,7 @@ const NavBar = () => {
       <div className="flex justify-between items-center px-6 md:px-10 h-[80px]">
         <img 
         srcSet={`${logo} 1x`}
-        src={logo} alt="logo" className="cursor-pointer w-32 h-auto" onClick={() => navigate({ to: "/" })} />
+        src={logo} alt="logo" className="cursor-pointer w-32 max-lg:w-20  h-auto" onClick={() => navigate({ to: "/" })} />
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 items-center">
