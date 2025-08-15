@@ -41,12 +41,12 @@ const Reservation = () => {
 
     return (
         <div className='relative bg-[#FCF8F5] overflow-hidden min-h-screen'>
-            {/* Background Images (Non-clickable) */}
-            <img src={Group1} alt="decoration" className='absolute z-0 bottom-5 left-0 w-28 md:w-40 pointer-events-none' />
+            {/* Background Images */}
+            <img src={Group1} alt="decoration" className='absolute z-0 bottom-7/20 left-0 w-28 md:w-40 pointer-events-none' />
             <img src={Group3} alt="decoration" className='absolute z-0 top-0 w-32 md:w-48 pointer-events-none' />
-            <img src={Group2} alt="decoration" className='absolute z-0 right-0 bottom-0 w-28 md:w-40 pointer-events-none' />
+            <img src={Group2} alt="decoration" className='absolute z-0 right-0 bottom-6/20 w-28 md:w-40 pointer-events-none' />
 
-            {/* Title & Description */}
+            {/* Title */}
             <div className='flex flex-col justify-center items-center gap-3 py-10 px-4'>
                 <h1 className='font-playfair font-[400] text-4xl md:text-6xl italic text-[#1E2C45]'>
                     Reservation
@@ -94,7 +94,7 @@ const Reservation = () => {
                 </div>
             </div>
 
-            {/* Reservation Details Section */}
+            {/* Reservation Details */}
             <div className='grid grid-cols-1 md:grid-cols-3 max-w-4xl mx-auto py-10 gap-6 border-b-2 px-4'>
                 <div className='flex flex-col gap-1'>
                     <label htmlFor="party" className='font-semibold'>Party Size</label>
@@ -120,12 +120,13 @@ const Reservation = () => {
                 <div className='flex flex-col gap-1'>
                     <label htmlFor="time" className='font-semibold'>Time</label>
                     <input
-                        type="time"
+                        type="text"
                         id='time'
                         value={selectedSlot}
                         onChange={(e) => setSelectedSlot(e.target.value)}
                         className='border rounded-sm px-2 py-1'
                         placeholder="Select from slots below"
+                        readOnly
                     />
                 </div>
             </div>
@@ -160,7 +161,7 @@ const Reservation = () => {
                 >
                     Make Reservation
                 </button>
-                </div>
+            </div>
 
             {/* Popup Modal */}
             {showPopup && (
@@ -179,7 +180,7 @@ const Reservation = () => {
                         </p>
                         <button
                             onClick={closePopup}
-                            className='mt-5 px-6 py-2 bg-[#1E2C45] text-white rounded-md font-semibold hover:bg-[#152033] transition'
+                            className='mt-5 px-6 py-2 bg-[#1E2C45] text-white rounded-md font-semibold hover:bg-[#152033] transition cursor-pointer'
                         >
                             OK
                         </button>
