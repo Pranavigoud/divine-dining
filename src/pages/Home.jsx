@@ -2,7 +2,7 @@ import React from "react";
 import homeimage from "../assets/homeimage.png";      
 import homeimage2 from "../assets/homeimage2.png";   
 import homeimage3 from "../assets/homeimage3.png";   
-import homeimage4 from "../assets/homeimage4.png";   
+import homeimage4 from "../assets/homeimage4.jpg";   
 import homeimage5 from "../assets/homeimage5.png";   
 import Ellipse from "../assets/Ellipse.png";
 import Group3 from "../assets/Group3.png";
@@ -104,7 +104,7 @@ const Home = () => {
 
             {/* ===== ABOUT ===== */}
             <section id="about" className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center mt-24 md:mt-32 px-8 md:px-28 text-center md:text-left">
-                <div className="flex justify-center md:justify-start z-50 order-1">
+                <div className="flex justify-center md:justify-start z-50 order-1 h-[80vh] max-lg:h-[60vh]">
                     <img src={homeimage4} alt="chef at work" className={imageClasses} />
                 </div>
                 <div className="order-2">
@@ -136,7 +136,7 @@ const Home = () => {
                     <img
                         src={homeimage3}
                         alt="Plated Dish"
-                        className="rounded-3xl object-cover object-center w-full max-w-[450px] shadow-lg"
+                        className={imageClasses}
                     />
                 </div>
             </section>
@@ -191,11 +191,11 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="mt-12 inline-flex items-center gap-6 px-4 sm:px-20 py-3 flex-wrap justify-center">
-                    <FaInstagram className="text-xl cursor-pointer hover:text-[#1E2C45] transition" />
-                    <PiFacebookLogoBold className="text-xl cursor-pointer hover:text-[#1E2C45] transition" />
-                    <TbBrandPinterest className="text-xl cursor-pointer hover:text-[#1E2C45] transition" />
-                    <RiYoutubeLine className="text-xl cursor-pointer hover:text-[#1E2C45] transition" />
-                    <BsTwitterX className="text-xl cursor-pointer hover:text-[#1E2C45] transition" />
+                    <FaInstagram className="text-xl cursor-pointer hover:text-[#1E2C45] duration-300 hover:scale-125 transition-transform" />
+                    <PiFacebookLogoBold className="text-xl cursor-pointer hover:text-[#1E2C45] duration-300 hover:scale-125 transition-transform" />
+                    <TbBrandPinterest className="text-xl cursor-pointer hover:text-[#1E2C45] duration-300 hover:scale-125 transition-transform" />
+                    <RiYoutubeLine className="text-xl cursor-pointer hover:text-[#1E2C45] duration-300 hover:scale-125 transition-transform" />
+                    <BsTwitterX className="text-xl cursor-pointer hover:text-[#1E2C45] duration-300 hover:scale-125 transition-transform" />
                 </div>
             </section>
 
